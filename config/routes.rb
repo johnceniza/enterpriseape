@@ -1,6 +1,19 @@
 Rails.application.routes.draw do
+  get "welcome/features"
+  get "welcome/pricing"
+  get "welcome/faqs"
+  get "welcome/contact"
+  get "welcome/about"
+  get "welcome/index"
+  
   resources :invoices
 
+  
+  #hashtagNAME is a method call i.e. invoices#index - calls method which is shown as 'def' and closed by end in ruby on rails
+  root to: 'welcome#index'
+  
+end
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,4 +68,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
