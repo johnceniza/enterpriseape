@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   
   resources :invoices
 
-  
   #hashtagNAME is a method call i.e. invoices#index - calls method which is shown as 'def' and closed by end in ruby on rails
   root to: 'welcome#index'
   
