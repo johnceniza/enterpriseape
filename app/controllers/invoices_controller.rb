@@ -3,8 +3,13 @@ class InvoicesController < ApplicationController
 
   # GET /invoices
   # GET /invoices.json
+      
+    #access our InvoiceSearch model and create new instance of it and pass saerch parameter
+    #call scope method on the class instantiated above
+
   def index
-    @invoices = Invoice.all
+    @search = InvoiceSearch.new(params[:search])
+    @invoices = @search.scope 
   end
 
   # GET /invoices/1

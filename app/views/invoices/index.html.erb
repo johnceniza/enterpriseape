@@ -1,5 +1,18 @@
-<h1>Listing invoices</h1>
+<div class="row">
+  <h1>Listing invoices</h1>
+  <div class ="pull-right range-query">
+    <!--the tag <% calls ruby and we write ruby code within it. If you add = like <%= that means display it on screen as well as call ruby-->
+    <!--implemented ruby do loop - implemented the "model" that the code below calls to query database for proper invoices-->
 
+    <%=form_tag invoices_path, method: :get do %>
+      <%=text_field_tag 'search[date_from]', @search.date_from %>
+      <%=text_field_tag 'search[date_to]', @search.date_to %>
+      <%=submit_tag 'Search', class: 'btn search-button' %>
+    <% end %>
+    
+  </div>
+</div>
+    
 <div class="media">
   <div class="media-body">
     <table class="table table-hover">
