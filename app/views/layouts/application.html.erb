@@ -8,16 +8,20 @@
 </head>
 <body>
 
-  <!-- create links using lines below link_to "NAME", location-->
+<div class="container">
   
-  <%= link_to "Home", root_path %> 
-  <%= link_to "About Us", welcome_about_path%> 
-  <%= link_to "Contact", welcome_contact_path %> 
-  <%= link_to "Features", welcome_features_path %> 
-  <%= link_to "FAQs", welcome_faqs_path %> 
-  <%= link_to "Pricing", welcome_pricing_path %>
-  <%= link_to "Invoices", invoices_path%> 
-  <%= link_to "Login", root_path %> 
+  <ul class="nav nav-tabs">
+        <!-- create links using lines below link_to "NAME", location-->
+
+    <li><%= link_to "Home", root_path %></li> 
+        <li><%= link_to "About Us", welcome_about_path%></li> 
+        <li><%= link_to "Contact", welcome_contact_path %></li> 
+        <li><%= link_to "Features", welcome_features_path %></li> 
+        <li><%= link_to "FAQs", welcome_faqs_path %></li> 
+        <li><%= link_to "Pricing", welcome_pricing_path %></li>
+        <li><%= link_to "Invoices", invoices_path%></li> 
+        <li><%= link_to "Login", root_path %></li> 
+  </ul>
 
 <%= yield %>
 
@@ -28,6 +32,7 @@
   <%= simple_format "  I'm really a hobby iOS dev trying to learn web devleopment using Ruby on Rails.\n" %>
   
   Check out my latest iOS app here: <%= link_to "Pxture", "http://pxture.it/get-it"%> 
-  
+
+</div>
 </body>
 </html>
