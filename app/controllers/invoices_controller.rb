@@ -10,6 +10,7 @@ class InvoicesController < ApplicationController
   def index
     @search = InvoiceSearch.new(params[:search])
     @invoices = @search.scope 
+    #@invoices = Invoice.all
   end
 
   # GET /invoices/1
