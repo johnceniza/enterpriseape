@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get "welcome/features"
   get "welcome/pricing"
   get "welcome/faqs"

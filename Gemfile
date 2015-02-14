@@ -36,15 +36,6 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 3.3.0'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'devise'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
+#JC note - must run 'bundle' command to fetch/load all gems

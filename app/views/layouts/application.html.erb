@@ -23,14 +23,17 @@
         <li><%= link_to "Login", root_path %></li> 
   </ul>
 
+  <p class ="notice"><%= notice %></p>
+  <p class ="alert"><%= alert %></p>
+  
 <%= yield %>
 
   <%= simple_format "-----------------\n" %>
-  
-  <%= simple_format "Hi, I'm John. This is a site I'm creating as part of a web development course.\n" %>
-  
-  <%= simple_format "  I'm really a hobby iOS dev trying to learn web devleopment using Ruby on Rails.\n" %>
-  
+
+  Hi, I'm John. This is a site I'm creating as part of a web development course.
+  <br>
+  I'm a hobby iOS dev trying to learn web devleopment using Ruby on Rails.
+  <br>
   Check out my latest iOS app here: <%= link_to "Pxture", "http://pxture.it/get-it"%> 
 
 </div>
